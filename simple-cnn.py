@@ -58,7 +58,7 @@ model.add(Dense(512, activation='relu', W_constraint=maxnorm(3)))
 model.add(Dropout(0.5))
 model.add(Dense(num_classes, activation='softmax'))
 # Compile model
-epochs = 25
+epochs = 1
 lrate = 0.01
 decay = lrate/epochs
 sgd = SGD(lr=lrate, momentum=0.9, decay=decay, nesterov=False)
@@ -70,3 +70,5 @@ model.fit(X_train, y_train, validation_data=(X_test, y_test), nb_epoch=epochs, b
 # Final evaluation of the model
 scores = model.evaluate(X_test, y_test, verbose=0)
 print("Accuracy: %.2f%%" % (scores[1]*100))
+
+model.save('simple-cnn.h5')
