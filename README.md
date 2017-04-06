@@ -28,8 +28,8 @@ As was the case with the CNN classifier. Trainning the SVM model is really time 
 ## Predictions
 There are iPython Notebooks that can be used to run predictions for the CNN and SVM classifiers. They are:
 
-- [Prediction CNN.ipynb](./Prediction CNN.ipynb)
-- [Prediction SVM.ipynb](./Prediction SVM.ipynb)
+- [Prediction CNN.ipynb](./PredictionCNN.ipynb)
+- [Prediction SVM.ipynb](./PredictionSVM.ipynb)
 
 These notebooks make use of some sample images that are not part of the CIFAR dataset. There are 30 images, 3 for each of the 10 classes that can be downloaded [here](https://s3.amazonaws.com/ml-capstone/images/all.zip). After downloading, unzip the file, and place the images in a folder called 'images'
 
