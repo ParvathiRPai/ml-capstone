@@ -1,1 +1,1 @@
-ipython nbconvert --to PDF ../Report.ipynb
+ipython nbconvert --to PDF "../Capstone Project.ipynb"
